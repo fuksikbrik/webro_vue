@@ -1,0 +1,66 @@
+<script>
+
+</script>
+
+<template>
+   <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-position-block">
+                <div class="footer-position-block-1">
+                    <p>Узнавайте первыми 
+                    о новинках и акциях WeBro</p>
+                    <div>
+                        <input type="text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="23" viewBox="0 0 26 23" fill="none">
+                            <path d="M4.04743 20.712L24.2387 12.0516C24.3183 12.0174 24.3861 11.9604 24.4338 11.8877C24.4814 11.8151 24.5068 11.73 24.5068 11.6429C24.5068 11.5559 24.4814 11.4708 24.4338 11.3981C24.3861 11.3255 24.3183 11.2685 24.2387 11.2342L4.04743 2.57383C3.79012 2.46355 3.50959 2.41927 3.23104 2.44497C2.95249 2.47068 2.68467 2.56556 2.45163 2.7211C2.2186 2.87664 2.02767 3.08795 1.89599 3.33604C1.76432 3.58413 1.69604 3.86123 1.69728 4.14242V10.3256L23.35 11.6167L1.69728 13.2405V19.1531C1.69763 19.4335 1.76708 19.7094 1.89942 19.9562C2.03176 20.203 2.22286 20.413 2.45565 20.5674C2.68844 20.7218 2.95567 20.8159 3.23344 20.8411C3.51121 20.8663 3.79087 20.822 4.04743 20.712Z" fill="#C4C3C3"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="footer-position-block-2">
+                    <router-link to="/about">
+                        <img src="../../assets/image/HeaderLogo.svg" alt="">
+                        <div class="footer-social-link"></div>
+                    </router-link>
+                </div>
+                <div class="footer-position-block-3">
+                    <div class="links">
+                       <router-link class="footer-link" to="/contact">Контакты</router-link>
+                       <router-link class="footer-link" to="/about">О нас</router-link>
+                       <router-link class="footer-link" to="/blog">Блог</router-link>
+                    </div>
+                    <div class="btns">
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</template>
+
+<style>
+    .footer{
+        background: #020202;
+    }
+    .wrapper{
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+    .footer-position-block{
+        display: flex;
+        justify-content: space-between;
+    }
+    .links{
+        display: flex;
+        justify-content: start;
+        gap: 46px;
+    }
+    .footer-link{
+        color: #C3C3C3;
+        font-family: Unbounded;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        text-decoration: none;
+    }
+</style>
